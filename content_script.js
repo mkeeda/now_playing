@@ -11,7 +11,6 @@ var album=album_e[0].innerHTML;
 album=album.replace(/& /g,"&"); 
 var tweet=encodeURIComponent('Title : '+title+'\n')+encodeURIComponent('Artist : '+artist+'\n')+encodeURIComponent('Album : '+album+'\n\n'); 
 
-//ジャケット画像をGoogle画像検索で取得
 var google = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=";
 var search= new XMLHttpRequest();
 search.open("GET", google+title+artist, false);
